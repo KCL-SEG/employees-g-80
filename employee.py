@@ -41,6 +41,7 @@ class Employee:
             else:
                 string += f"commission for {self.commissionContracts} contract(s) at {self.commission}/contract"
         string += f". Their total pay is {self.get_pay()}.$"
+        return string
 
 
 
