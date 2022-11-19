@@ -32,7 +32,7 @@ class Employee:
         if self.salaryType == "monthly":
             string += f"{self.salaryType} salary of {self.salary}"
         else:
-            string += f"{self.salaryType} of {self.hours} at {self.salary}/hour"
+            string += f"{self.salaryType} of {self.hours} hours at {self.salary}/hour"
         
         if self.commissionType:
             string += f" and receives a "
@@ -40,7 +40,7 @@ class Employee:
                 string += f"{self.commissionType} commission of {self.commission}"
             else:
                 string += f"commission for {self.commissionContracts} contract(s) at {self.commission}/contract"
-        string += f". Their total pay is {self.get_pay()}.$"
+        string += f". Their total pay is {self.get_pay()}."
         return string
 
 
